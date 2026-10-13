@@ -1,0 +1,73 @@
+# LeopardWatch / Wildlife Detection System
+# Keep source code, config templates and small approved inference models.
+
+# Python environments and caches
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# React / Vite dependencies and generated files
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+
+# Local environment configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# Local authentication/user databases and log files
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log
+logs/
+
+# Uploaded and generated video artifacts; preserve the empty folders
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/outputs/*
+!backend/outputs/.gitkeep
+
+# Large media and training datasets should not be committed
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.zip
+datasets/
+dataset/
+training/datasets/
+training/data/
+leopard_runs/
+runs/
+wandb/
+.ipynb_checkpoints/
+
+# Model checkpoints: only whitelist the reviewed current deployment model
+*.pt
+*.pth
+*.onnx
+!backend/models/best.pt
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
